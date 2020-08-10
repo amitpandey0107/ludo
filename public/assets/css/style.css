@@ -1,0 +1,824 @@
+body{
+	font-family: 'Aller bold';
+	font-weight: bold;
+    font-style: normal;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+.rupeeSymol{
+    font-family: 'Rupee Foradian';
+    font-weight: normal;
+    font-style: normal;
+}
+a, button, input[type=reset], input[type=submit], input[type=button] {
+   -webkit-transition: all ease-in-out 0.3s;
+   -moz-transition: all ease-in-out 0.3s;
+   -ms-transition: all ease-in-out 0.3s;
+   -o-transition: all ease-in-out 0.3s;
+   transition: all ease-in-out 0.3s;
+   cursor: pointer;
+}
+
+a:hover, a:focus {
+   text-decoration: none;
+}
+
+button:hover, button:focus,
+input:hover, input:focus{
+    outline: 0 !important;
+}
+.slick-initialized .slick-slide:focus {
+    outline: none;
+}
+body .mainWrapper{
+	background: url(../images/ludo-bg.jpg) no-repeat center bottom/cover;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/****  Splash Screen Start  ****/
+.ludoDesk-centerMode-box {
+    width: 516px;
+    margin: auto;
+    display: block;
+    border: 15px solid rgba(0, 0, 0, 0.18);
+    border-radius: 20px;
+    height: 906px;
+}
+
+.ludoSplash-screen-wrapper .ludoSplash-inner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    border-radius: 8px;
+    background-size: 100% 100%;
+    background: url(../images/ludo-center-bg.png) no-repeat;
+}
+.ludocommon-bg {
+    height: 100%;
+    border-radius: 8px;
+    background-size: 100% 100%;
+    background: url(../images/ludo-center-bg.png) no-repeat;
+}
+.ludoSplash-top-box .ludoLogo-area img{
+	max-width: 220px;
+}
+
+.ludoSplash-top-box .ludoSplash-tagline-text p{
+    font-family: 'Aller bold';
+    font-size: 24px;
+    color: #ffb432;
+    margin: 20px 0 0;
+    text-align: center;
+}
+
+.ludoSplash-loading-box img {
+    max-width: 125px;
+}
+
+.ludoSplash-loading-box span{
+	font-family: 'Aller bold';
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    display: block;
+    margin-top: 13px;
+}
+
+/****** Loading Dots Animation Code Start ******/
+.ludoSplash-loading-box span:after {
+  content: '.';
+  -webkit-animation: ellipsis 1s steps(5, end) infinite;      
+  animation: ellipsis 1s steps(5, end) infinite;
+}
+
+@-webkit-@keyframes ellipsis {
+  0%, 20% {
+    color: rgba(0,0,0,0);
+    text-shadow:
+      .25em 0 0 rgba(0,0,0,0),
+      .5em 0 0 rgba(0,0,0,0);
+  }
+  40% {
+    color: white;
+    text-shadow:
+      .25em 0 0 rgba(0,0,0,0),
+      .5em 0 0 rgba(0,0,0,0);
+  }
+  60% {
+    text-shadow:
+      .25em 0 0 white,
+      .5em 0 0 rgba(0,0,0,0);
+  }
+  80%, 100% {
+    text-shadow:
+      .25em 0 0 white,
+      .5em 0 0 white;
+  }
+}
+
+@keyframes ellipsis {
+  0%, 20% {
+    color: rgba(0,0,0,0);
+    text-shadow:
+      .25em 0 0 rgba(0,0,0,0),
+      .5em 0 0 rgba(0,0,0,0);
+  }
+  40% {
+    color: white;
+    text-shadow:
+      .25em 0 0 rgba(0,0,0,0),
+      .5em 0 0 rgba(0,0,0,0);
+  }
+  60% {
+    text-shadow:
+      .25em 0 0 white,
+      .5em 0 0 rgba(0,0,0,0);
+  }
+  80%, 100% {
+    text-shadow:
+      .25em 0 0 white,
+      .5em 0 0 white;
+  }
+}
+/****** Loading Dots Animation Code End ******/
+/****  Splash Screen End  ****/
+
+.ludolobby-screen-wrapper .ludolobby-inner {
+    height: 100%;
+    border-radius: 8px;
+    background: url(../images/lobby/lobby-bg.png) no-repeat;
+    position: relative;
+    overflow: hidden;
+    background-size: 100% 100%;
+}
+.ludolobby-top-head, .ludoLobby-left-part {
+    display: flex;
+    align-items: center;
+}
+.ludolobby-top-head {
+    justify-content: space-between;
+    background: url(../images/lobby/bg_profile_details.png) no-repeat top center/cover;
+    width: 98%;
+    min-height: 114px;
+    margin: 10px auto 0;
+}
+
+.ludoLobby-left-part{
+	padding-left: 15px;
+}
+.ludoLobby-right-part{
+	padding-right: 15px;
+}
+
+.ludoUser-Profile-img {
+    position: relative;
+    margin-right: 10px;
+}
+
+.ludoUser-Profile-img img.lobbyProfile-ring-img {
+    max-width: 70px;
+}
+
+.ludoUser-Profile-img .userProfileImg {
+    position: absolute;
+    top: 3.5px;
+    left: 4px;
+}
+
+.ludoUser-Profile-img .userProfileImg img {
+    border-radius: 100px;
+    max-width: 62px;
+    height: 62px;
+}
+
+.ludoUser-name span {
+    font-size: 17px;
+    font-family: 'Aller bold';
+    color: #839cee;
+}
+
+.ludoUser-name span {
+    font-size: 17px;
+    font-family: 'Aller bold';
+    color: #839cee;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.ludoWallert-money-inner {
+    width:180px;
+    background: #091c6b;
+    border-radius: 100px;
+    position: relative;
+    height: 35px;
+    border: 1px solid #ffff80;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(255,255,128,1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(255,255,128,1);
+    box-shadow: 0px 0px 5px 0px rgba(255,255,128,1);
+}
+.btnOnlyImage-blank{
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+.ludoWallert-money-inner .wallertIcon, .ludoWallert-money-inner .addMoneyIcon {
+    position: absolute;
+}
+
+.walletMoney-text span {
+    color: #fff;
+    font-family: 'Aller bold';
+    display: block;
+    text-align: center;
+    line-height: 35px;
+    font-size: 18px;
+}
+
+.ludoWallert-money-inner .addMoneyIcon img {
+    max-width: 47px;
+}
+
+.ludoWallert-money-inner .wallertIcon {
+    left: -1px;
+    top: 4px;
+}
+
+.ludoWallert-money-inner .addMoneyIcon {
+    right: -6px;
+    top: -6px;
+}
+
+.ludoWallert-money-inner .wallertIcon img {
+    max-width: 40px;
+}
+
+.ludoLobby-right-part .ludoLobby-right-inner {
+    display: flex;
+    align-items: center;
+}
+
+.ludoLobby-right-part .ludoLobby-right-inner .ludoLobby-headRight-icon img {
+    max-width: 45px;
+    cursor: pointer;
+}
+
+.ludoLobby-right-part .ludoLobby-right-inner .ludoLobby-headRight-icon {
+    margin-right: 10px;
+    position: relative;
+}
+span.notificationCount {
+    width: 24px;
+    height: 24px;
+    background: #091c6b;
+    display: block;
+    border-radius: 100px;
+    color: #fff;
+    font-family: 'Aller bold';
+    text-align: center;
+    line-height: 24px;
+    position: absolute;
+    top: -10px;
+    right: -4px;
+    font-size: 14px;
+}
+
+.ludoLobby-right-part .ludoLobby-right-inner .ludoLobby-headRight-icon:last-child {
+    margin: 0;
+}
+.ludoSuperMe-adsLobby-wrap {
+    margin-top: 20px;
+}
+.ludoSuperMe-adsLobby-wrap .adsLobby-slide-inner {
+    padding: 0 15px;
+}
+.ludoSuperMe-adsLobby-wrap .adsLobby-item{
+    padding: 0 10px;
+}
+.ludoSuperMe-adsLobby-wrap ul.slick-dots {
+    padding: 0;
+    margin: 15px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ludoSuperMe-adsLobby-wrap ul.slick-dots li {
+    list-style: none;
+    margin: 0 7px;
+    line-height: 0;
+}
+
+.ludoSuperMe-adsLobby-wrap ul.slick-dots li button {
+    border-radius: 100px;
+    border: none;
+    height: 10px;
+    width: 10px;
+    padding: 0;
+    font-size: 0;
+    box-shadow: 0px 0px 5px 0px rgba(255,255,128,1);
+}
+.ludoSuperMe-adsLobby-wrap ul.slick-dots li.slick-active button {
+    background: #2f5fdd;
+    box-shadow: 0px 0px 5px 0px rgb(255 255 255);
+}
+.ludolobby-logo-area{
+	padding: 28px 0;
+}
+.ludolobby-logo-area img{
+	max-width: 160px;
+}
+
+.chooseGame-playWith-inner .choosePlayWith-img{
+    text-align: center;
+}
+
+.chooseGame-playWith-inner .choosePlayWith-img:first-child{
+	margin-bottom: 15px;
+}
+
+.chooseGame-playWith-inner .choosePlayWith-img img {
+    max-width: 376px;
+}
+
+.ludolobby-bottom-box {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    margin-top: 21px;
+    bottom: 0px;
+}
+
+.ludolobby-bottom-box .winningName-rank-inner {
+    height: 100%;
+    background: rgba(4, 14, 43, 0.65);
+    display: flex;
+    align-items: center;
+}
+
+.ludolobby-bottom-box .winningName-rank-inner img {
+    max-width: 108px;
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+}
+
+.ludolobby-bottom-box .winningName-rank-inner h5 {
+    width: 100%;
+    font-size: 17px;
+    text-align: right;
+    color: #fff;
+    font-family: 'Aller bold';
+    letter-spacing: -0.28px;
+    margin: 0 25px 0 0;
+}
+
+.ludolobby-bottom-box .winningName-rank-inner h5 span {
+    color: #e19953;
+}
+
+/******* Login Screen Start ****/
+.ludoLogin-screen-wrapper .ludoLogin-inner {
+    padding: 0 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ludoLogin-inner .ludoLogin-card {
+    background: rgb(11,31,96);
+    background: -moz-linear-gradient(0deg, rgba(11,31,96,1) 0%, rgba(61,92,209,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(11,31,96,1) 0%, rgba(61,92,209,1) 100%);
+    background: linear-gradient(0deg, rgba(11,31,96,1) 0%, rgba(61,92,209,1) 100%);
+    text-align: center;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    position: relative;
+    min-height: 495px;
+    width: 100%;
+}
+
+.ludoLogin-inner .ludoLogin-card .ludoLogin-type-inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ludoLogin-diceLogo, .ludoLogin-mainLogo{
+    position: relative;
+    z-index: 2;
+}
+
+.ludoLogin-diceLogo {
+    position: relative;
+    top: 20px;
+}
+
+.ludoLogin-dropShadow {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -26px;
+}
+
+.ludoLogin-dropShadow img {
+    max-width: 240px;
+}
+
+.ludoLogin-logoBox {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+}
+.ludoLogin-diceLogo img {
+    max-width: 96px;
+}
+
+.ludoLogin-mainLogo img {
+    max-width: 250px;
+}
+
+.ludoLogin-logoBox:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -20px;
+    margin: auto;
+    background: rgba(2, 14, 62, 0.31);
+    height: 180px;
+    width: 180px;
+    border-radius: 100px;
+    border: 15px solid rgba(57, 87, 201, 0.24);
+}
+
+.ludoLogin-type-inner .signUptext-block{
+    text-align: center;
+    color: #fff;
+    display: block;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 1);
+    font-size: 22px;
+    padding:25px 0 35px;
+    font-family: 'Aller bold';
+}
+
+button.ludoLogin-btn {
+    padding: 0;
+    border: none;
+    background: transparent;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    -webkit-box-shadow:0px 2px 5px 0px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow:0px 2px 5px 0px rgba(0, 0, 0, 0.29);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.29);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+button.ludoLogin-btn.faceLogin-btn{
+    margin-bottom: 20px;
+}
+
+button.ludoLogin-btn span {
+    display: flex;
+    background: #4863ae;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-family: 'Aller bold';
+    padding: 0 15px;
+    letter-spacing: 1px;
+}
+
+button.ludoLogin-btn.googleLogin-btn span{
+    background: #d35242;
+}
+
+
+button.ludoLogin-btn i {
+    background: #324579;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    font-size: 20px;
+}
+
+button.ludoLogin-btn.googleLogin-btn i{
+    background: #93392d;
+}
+
+
+/**** Custom Checkout *****/
+.ludoLogin-termCon-block {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+}
+.chkblock {
+    position: relative;
+    margin: 0;
+}
+.chkblock input[type=checkbox] {
+    display: none;
+}
+.chkblock input[type=checkbox]+label {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 0;
+        font-size: 20px;
+    color: #829dec;
+    font-family: 'Aller bold';
+    text-align: center;
+}
+.chkblock input[type=checkbox]+label:before {
+    content: "\2713";
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    margin-right: 0.2em;
+    vertical-align: top;
+    color: transparent;
+    transition: .2s;
+    background: transparent;
+    line-height: 20px;
+    border-radius: 5px;
+    border: 3px solid rgba(55, 72, 128, 0.71);
+    font-size: 16px;
+    font-weight: bold;
+}
+.chkblock input[type=checkbox]:checked+label:before {
+    background: #06133b;
+    color: #829dec;
+}
+/******* Login Screen End ****/
+
+
+/****** Play With Friend Start ******/
+.ludoPlayWithFriend-screen-wrapper .ludoPlayWithFriend-inner{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.joinLudo-inner .joinLudo-title h2 {
+    color: #829dec;
+    font-size: 32px;
+    text-align: center;
+    margin: 30px 0 60px 0;
+}
+
+.joinLudo-tab-wrap{
+    position: relative;
+}
+
+ul.joinLudo-tabs{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -35px;
+    text-align: center;
+}
+ul.joinLudo-tabs li {
+    display: inline-block;
+    background: url(../images/joinboard/button_tab_blue.png) no-repeat;
+    padding: 21px 0;
+    text-align: center;
+    text-shadow: 0px 3px 2px rgb(0 0 0 / 57%);
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Aller bold';
+    margin: 0 3px;
+    text-transform: uppercase;
+    width: 170px;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+ul.joinLudo-tabs li.current{
+    background: url(../images/joinboard/button_tab_green.png) no-repeat;
+    background-size: 100%;
+}
+
+.joinLudo-tab-wrap .joinLudo-tab-content {
+    padding: 0 20px;
+}
+
+.joinLudo-tab-item{
+    display: none;
+    background: url("../images/joinboard/box_section_create.png") no-repeat;
+    padding: 60px 40px 20px;
+    background-size: 100% 100%;
+    min-height: 540px;
+}
+
+.joinLudo-tab-item.current{
+    display: inherit;
+}
+
+.createLudo-nofPlayer-block {
+    margin-top: 25px;
+}
+
+.createLudo-entryAmount-block h3.entryTitle,
+.createLudo-nofPlayer-block h3.nofPlayer-title{
+    text-align: center;
+    font-size: 27px;
+    margin: 0 0 12px 0;
+    color: #fff;
+    font-family: 'Aller bold';
+}
+
+.entryAmount-button-block .entryAmountBtn-inner,
+.nofPlayer-button-block .nofPlayerBtn-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.entryAmountBtn-inner button.entryAmount-btn,
+.nofPlayerBtn-inner button.nofPlayer-btn {
+    background: transparent;
+    border: none;
+    position: relative;
+}
+
+.entryAmountBtn-inner button.entryAmount-btn img{
+    width: 92px;
+}
+.nofPlayerBtn-inner button.nofPlayer-btn img{
+    width: 66px;
+}
+
+.entryAmountBtn-inner button.entryAmount-btn p{
+    font-size:25px;
+    color: #fff;
+    font-family: 'Aller bold';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.entryAmountBtn-inner button.entryAmount-btn p span{
+    font-family: 'Rupee Foradian';
+}
+
+.entryAmount-input-block input.Inputfleid-control {
+    color: #fff;
+    background: #162a6d;
+    -webkit-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.20);
+    -moz-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.20);
+    box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.20);
+    height: 54px;
+    width: 294px;
+    border: none;
+    text-align: center;
+    margin: 5px auto 0;
+    display: block;
+    font-size: 20px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-family: 'Aller bold';
+}
+
+.entryAmount-input-block input.Inputfleid-control::placeholder {
+  color: rgba(255,255,255,0.7);
+  font-family: 'Aller bold';
+  letter-spacing: 0.5px;
+}
+
+.entryAmount-input-block input.Inputfleid-control:-ms-input-placeholder {
+  color: rgba(255,255,255,0.7);
+  font-family: 'Aller bold';
+  letter-spacing: 0.5px;
+}
+
+.entryAmount-input-block input.Inputfleid-control::-ms-input-placeholder {
+  color: rgba(255,255,255,0.7);
+  font-family: 'Aller bold';
+  letter-spacing: 0.5px;
+}
+button.entryAmount-btn.amountSelected .defaultAmount-bg,
+button.nofPlayer-btn.noFplaySelected .defaultCircle-bg{
+    display: none;
+}
+button.entryAmount-btn:not(.amountSelected) .selectAmount-bg,
+button.nofPlayer-btn:not(.noFplaySelected) .selectCircle-bg{
+    display: none;
+}
+
+.createLudo-btn-block button.createLudo-game-btn {
+    background: transparent;
+    border: none;
+    position: relative;
+    margin: 20px auto 0;
+    display: block;
+}
+.createLudo-btn-block button.createLudo-game-btn span {
+    text-shadow: 0px 3px 2px rgb(0 0 0 / 57%);
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Aller bold';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+
+.createLudo-prizebox-wrap .prizeBox-img {
+    margin-right: 12px;
+}
+.createLudo-prizebox-wrap {
+    display: flex;
+    align-items: center;
+}
+.prizeBox-text p {
+    color: #8ca8fb;
+    font-size: 18px;
+    margin: 0;
+    font-family: 'Aller bold';
+}
+
+.prizeBox-text a {
+    color: #fff;
+    font-size: 19px;
+    margin: 5px 0 0 0;
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.prizeBox-text a:hover{
+    text-decoration: underline;
+}
+
+.ludoHome-footerInner button.homeBtn {
+    background: transparent;
+    border: none;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+.ludoHome-footer-block {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -8px;
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+/****** Play With Friend End ******/
+
+
+/****** Add Money Modal ******/
+.addMoney-modal-block .modal-header button.close {
+    padding: 0;
+    opacity: 1 !important;
+}
+.addMoney-modal-block .modal-content{
+    background: url("../images/addmoney/modal-bg.png") no-repeat;
+    background-size: 100%;
+}

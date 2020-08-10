@@ -1,0 +1,222 @@
+@media (max-width: 1400px) and (min-width: 1100px){
+
+    /**** Splash Screen Start ****/
+    .ludoDesk-centerMode-box {
+        width: 360px;
+        height: 596px;
+    }
+    .ludoSplash-top-box .ludoLogo-area img {
+        max-width: 170px;
+    }
+    .ludoSplash-top-box .ludoSplash-tagline-text p {
+        font-size: 18px;
+        margin: 15px 0 0;
+    }
+    .ludoSplash-loading-box img {
+        max-width: 75px;
+    }
+    .ludoSplash-loading-box span {
+        font-size: 13px;
+        margin-top: 10px;
+    }
+    /**** Splash Screen End ****/
+
+
+    /**** Lobby Screen Start ****/
+    .ludolobby-top-head{
+        background-size: 100%; 
+        min-height: 84px;
+        margin: 5px auto 0;
+    }
+    .ludoUser-Profile-img img.lobbyProfile-ring-img{
+        width: 50px;
+    }
+    .ludoUser-Profile-img .userProfileImg img{
+        width: 42px;
+        height: 42px;
+    }
+    .walletMoney-text span{
+        font-size: 13px;
+        line-height: 29px;
+    }
+    .ludoWallert-money-inner .wallertIcon img {
+        max-width: 27px;
+    }
+    .ludoWallert-money-inner .addMoneyIcon img {
+        max-width: 36px;
+    }
+    .ludoWallert-money-inner .wallertIcon {
+        top: 5px;
+    }
+    .ludoWallert-money-inner .addMoneyIcon {
+        top: -4px;
+    }
+    span.notificationCount {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 11px;
+    }
+    .ludoWallert-money-inner{
+        width: 110px;
+        height: 28px;
+    }
+    .ludoLobby-right-part .ludoLobby-right-inner .ludoLobby-headRight-icon img{
+        max-width: 32px;
+    }
+    .ludoUser-name span{
+        font-size: 13px;
+    }
+    .ludoLobby-right-part .ludoLobby-right-inner .ludoLobby-headRight-icon{
+        margin-right: 6px;
+    }
+    .ludoSuperMe-adsLobby-wrap ul.slick-dots{
+        margin: 8px 0 0 0;
+    }
+    .ludoSuperMe-adsLobby-wrap ul.slick-dots li button{
+        width: 7px;
+        height: 7px;
+    }
+    .ludoSuperMe-adsLobby-wrap {
+        margin-top: 10px;
+    }
+    .ludolobby-logo-area img {
+        max-width: 120px;
+    }
+    .ludolobby-logo-area {
+        padding: 20px 0;
+    }
+    .chooseGame-playWith-inner .choosePlayWith-img img {
+        max-width: 220px;
+    }
+    .ludolobby-bottom-box{
+        height: 40px;
+    }
+    .ludolobby-bottom-box .winningName-rank-inner img {
+        max-width: 78px;
+        left: 12px;
+    }
+    .ludolobby-bottom-box .winningName-rank-inner h5{
+        font-size: 11px;
+    }
+    /**** Lobby Screen End ****/
+
+    /**** Login Screen Start ****/
+    .ludoLogin-screen-wrapper .ludoLogin-inner {
+        padding: 0 20px;
+    }
+    .ludoLogin-diceLogo img {
+        max-width: 58px;
+    }
+    .ludoLogin-mainLogo img {
+        max-width: 150px;
+    }
+    .ludoLogin-inner .ludoLogin-card{
+        min-height: 305px;
+    }
+    .ludoLogin-logoBox{
+        top: 40px;
+    }
+    .ludoLogin-logoBox:after {
+        top: -9px;
+        height: 140px;
+        width: 140px;
+        border: 7px solid rgba(57, 87, 201, 0.24);
+    }
+    .ludoLogin-type-inner .signUptext-block{
+        font-size: 17px;
+    }
+    button.ludoLogin-btn i{
+        font-size: 14px;
+        width: 55px;
+    }
+    button.ludoLogin-btn span {
+        white-space: nowrap;
+        font-size: 14px;
+        padding: 0 5px;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    }
+    button.ludoLogin-btn{
+        margin: auto;
+        height: 46px;
+    }
+    .chkblock input[type=checkbox]+label{
+        font-size: 13px;
+    }
+    .chkblock input[type=checkbox]+label:before {
+        width: 18px;
+        height: 18px;
+        line-height: 13px;
+        border: 2px solid rgba(55, 72, 128, 0.71);
+        font-size: 12px;
+    }
+    /**** Login Screen End ****/
+
+
+
+    /****** Play With Friend Start ******/
+
+    ul.joinLudo-tabs li {
+        padding: 13px 0;
+        font-size: 16px;
+        text-shadow: 0px 3px 2px rgb(0 0 0 / 40%);
+        width: 110px;
+    }
+    .joinLudo-inner .joinLudo-title h2 {
+        color: #829dec;
+        font-size: 20px;
+        text-align: center;
+        margin: 6px 0 36px 0;
+    }
+    ul.joinLudo-tabs{
+        top: -24px;
+    }
+    .joinLudo-tab-item{
+        padding: 40px 30px 15px;
+        min-height: 374px;
+    }
+    .joinLudo-tab-wrap .joinLudo-tab-content {
+        padding: 0 10px;
+    }
+    .entryAmount-input-block input.Inputfleid-control{
+        width: 100%;
+        font-size: 15px;
+        height: 40px;
+    }
+    .createLudo-entryAmount-block h3.entryTitle, .createLudo-nofPlayer-block h3.nofPlayer-title {
+        font-size: 19px;
+        margin: 0 0 8px 0;
+    }
+    .entryAmountBtn-inner button.entryAmount-btn img {
+        width: 60px;
+    }
+    .entryAmountBtn-inner button.entryAmount-btn p{
+        font-size: 16px;
+    }
+    .nofPlayerBtn-inner button.nofPlayer-btn img {
+        width: 42px;
+    }
+    .createLudo-btn-block button.createLudo-game-btn{
+        margin: 10px auto 0;
+    }
+    .createLudo-btn-block button.createLudo-game-btn img {
+        max-width: 160px;
+    }
+    .createLudo-btn-block button.createLudo-game-btn span{
+        font-size: 17px;
+        top: -5px;
+    }
+    .prizeBox-text p, .prizeBox-text a{
+        font-size: 13px;
+    }
+    .createLudo-prizebox-wrap .prizeBox-img img {
+        max-width: 44px;
+    }
+    .ludoHome-footerInner button.homeBtn img {
+        max-width: 110px;
+    }
+    .createLudo-nofPlayer-block {
+        margin-top: 15px;
+    }
+    /****** Play With Friend End ******/
+}

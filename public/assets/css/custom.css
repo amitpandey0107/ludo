@@ -1,0 +1,184 @@
+.ludoLogin-btn {
+    padding: 0;
+    border: none;
+    background: transparent;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    -webkit-box-shadow:0px 2px 5px 0px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow:0px 2px 5px 0px rgba(0, 0, 0, 0.29);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.29);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.ludoLogin-btn i {
+    background: #324579;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    font-size: 20px;
+}
+
+.ludoLogin-btn span {
+    opacity: 1 !important;
+}
+.ludoLogin-btn span {
+    display: flex;
+    background: #4863ae;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-weight: bold;
+    padding: 0 15px;
+    letter-spacing: 1px;
+}
+.kep-login-facebook {
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    -webkit-font-smoothing: antialiased !important;
+    color: #fff !important;
+    cursor: pointer !important;
+    display: inline-block !important;
+    font-size: inherit !important;
+    text-decoration: none !important;
+    text-transform: initial !important;
+    transition: initial !important;
+    background-color: transparent !important;
+    border: initial !important;
+    padding: inherit !important;
+    letter-spacing: 1px;
+    font-size: 14px !important;
+    white-space: nowrap;
+    padding: 0 5px !important;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.ludoLogin-btn {
+    padding: 0;
+    border: none;
+    background: transparent;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.29);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.29);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.ludoLogin-btn.googleLogin-btn i {
+    background: #93392d;
+}
+.ludoLogin-btn i {
+    background: #324579;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    font-size: 20px;
+}
+.googleLogin-btn button {
+    background: #d35242 !important;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    opacity: 1 !important;
+}
+.googleLogin-btn button > div {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: #d35242 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+.ludoLogin-btn.googleLogin-btn span {
+    background: #d35242;
+}
+.googleLogin-btn button span {
+    padding: 0 !important;
+    font-weight: bold !important;
+    font-size: 14px !important;
+    white-space: nowrap;  
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.ludoLogin-btn span {
+    opacity: 1 !important;
+}
+.ludoLogin-btn span {
+    display: flex;
+    background: #4863ae;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-weight: bold;
+    padding: 0 15px;
+    letter-spacing: 1px;
+}
+.ludoLogin-btn.faceLogin-btn {
+    margin-bottom: 20px;
+}
+.ludoLogin-btn.faceLogin-btn i {
+    width: 72px;
+}
+button.kep-login-facebook.metro {
+    white-space: nowrap;
+    font-size: 14px;
+    padding: 0 5px;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.ludoSplash-bottom-box img {
+    max-width: 100%;
+    height: auto;
+}
+.ludoSuperMe-adsLobby-wrap ul.slick-dots li {
+    list-style: none;
+    margin: 0 7px;
+    line-height: 0;
+    height: auto;
+    width: auto;
+}
+.ludoSuperMe-adsLobby-wrap ul.slick-dots li button {
+    border-radius: 100px;
+    border: none;
+    height: 10px;
+    width: 10px;
+    padding: 0;
+    font-size: 0;
+    box-shadow: 0px 0px 5px 0px rgba(255,255,128,1) !important;
+    background: white;
+}
+.slick-dots {
+    bottom: -14px !important;
+}
+
+@media (max-width: 1400px) and (min-width: 1100px) {
+    .ludoHome-footerInner .homeBtn img {
+        max-width: 110px;
+    }
+}
+.ludoHome-footerInner .homeBtn {
+    background: transparent;
+    border: none;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
